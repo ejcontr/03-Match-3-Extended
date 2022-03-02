@@ -76,7 +76,7 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="UI/HUD"]
 anchor_right = 1.0
 margin_bottom = 30.0
-color = Color( 1, 1, 1, 0.376471 )
+color = Color( 0.372549, 0.972549, 0.00392157, 0.376471 )
 
 [node name="Level" type="Control" parent="UI"]
 pause_mode = 2
@@ -158,6 +158,8 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="set_dimensions" from="." to="Grid" method="_on_Game_set_dimensions"]
 [connection signal="timeout" from="DestroyTimer" to="Grid" method="_on_DestroyTimer_timeout"]
